@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/assets/fonts/IRANSansX-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* for persian mode */
+*{
+    direction: rtl;
+    text-align: right;
+}
+
