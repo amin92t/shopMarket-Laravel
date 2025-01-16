@@ -1,8 +1,40 @@
 .header{
     position: fixed;
-    line-height: 1.3rem;
+    line-height: 3.2rem;
     top: 0;
     right: 0;
     width: 100%;
-    padding: 0 0.5rem 0 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+    align-items: stretch;
+}
+
+.logo{
+    max-height: 3.2rem;
+}
+
+.logo-section{
+    flex: 0 0 20rem;
+}
+
+.main-section{
+    background-color: #ffffff;
+    width: calc(100% - 20rem);
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.search-area{
+    background-color: #ecebeb;
+    padding: 0.4rem 0.6rem;
+    border-radius: 2rem;
+}
+
+.search-input{
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
 }

@@ -9,5 +9,10 @@
 *{
     direction: rtl;
     text-align: right;
+    font-family: 'IRANSans';
 }
 
+.bg-gray{
+    background-color: #ecebeb;
+    color: #000;
+}

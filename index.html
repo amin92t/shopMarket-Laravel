@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/animate.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/grid.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/grid.css" />
     <title>admin-panel</title>
-</head>
-<!-- Direction for persian  -->
-<body dir="rtl">
-
-<!-- Header -->
-<header class="header">
-
-    <section>
-
+  </head>
+  <!-- Direction for persian  -->
+  <body dir="rtl">
+    <!-- Header -->
+    <header class="header">
+      <section class="logo-section bg-gray">
         <!-- Logo Section -->
-        <section class="logo-section">
-
-            <!-- Toggle Button -->
-            <span class="d-inline d-md-none"><i class="fas fa-toggle-off"></i></span>
-            <span class="d-md-inline d-none"><i class="fas fa-toggle-on"></i></span>
-            <!-- Logo -->
-            <span class="d-inline"><img src="" alt="logo"></span>
-            <!-- Menu Button on Tablet or Mobile Size -->
-            <span class="d-inline d-md-none"><i class="fas fa-ellipsis-h"></i></span>
-
-
+        <section
+          class="d-flex justify-content-between flex-md-row-reverse px-2"
+        >
+          <!-- Toggle Button -->
+          <span class="d-inline d-md-none"
+            ><i class="fas fa-toggle-off"></i
+          ></span>
+          <span class="d-md-inline d-none"
+            ><i class="fas fa-toggle-on"></i
+          ></span>
+          <!-- Logo -->
+          <span class="d-inline"><img src="" alt="logo" /></span>
+          <!-- Menu Button on Tablet or Mobile Size -->
+          <span class="d-md-none"><i class="fas fa-ellipsis-h"></i></span>
         </section>
+      </section>
 
-
-
-    </section>
-
-
-</header>
-
+      <!-- Main Section in header -->
+      <section class="main-section">
+        <section class="d-flex">
+            <section>
+              <!-- Search Box -->
+            <span class="mr-3">
+              <span class="search-area d-none">
+                <i class="fas fa-times pointer"></i>
+                <input type="text" class="search-input" />
+                <i class="fas fa-search"></i>
+              </span>
+              <i class="fas fa-search p-1 d-none d-md-inline"></i>
+            </span>
+            <!-- FullScreen Button -->
+            <span class="pointer p-1 d-none d-md-inline">
+                <i class="fas fa-compress"></i>
+                <i class="fas fa-expand"></i>
+            </span>
+          </section>
+        </section>
+      </section>
+    </header>
 
     <!-- Script Files -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/popper.min.js"></script>
     <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="/assets/js/script.js"></script>
-    
-</body>
+  </body>
 </html>
