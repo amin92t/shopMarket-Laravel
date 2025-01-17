@@ -38,3 +38,36 @@
     outline: none;
     border: none;
 }
+
+.header-notification{
+    position: absolute;
+    left: 0;
+    margin-top: 0.2rem;
+    width: 16rem;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 0 1px 20px 0 rgba(70, 90, 100, 0.4);
+    display: none;
+}
+
+.notification-img{
+    width: 3rem;
+    border-radius: 0.2rem;
+}
+
+.notification-user{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+}
+
+.notification-text{
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+}
+
+.notification-time{
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    color: #838383;
+}

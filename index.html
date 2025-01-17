@@ -1,65 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="/assets/css/animate.min.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/grid.css" />
-    <title>admin-panel</title>
-  </head>
-  <!-- Direction for persian  -->
-  <body dir="rtl">
-    <!-- Header -->
-    <header class="header">
-      <section class="logo-section bg-gray">
-        <!-- Logo Section -->
-        <section
-          class="d-flex justify-content-between flex-md-row-reverse px-2"
-        >
-          <!-- Toggle Button -->
-          <span class="d-inline d-md-none"
-            ><i class="fas fa-toggle-off"></i
-          ></span>
-          <span class="d-md-inline d-none"
-            ><i class="fas fa-toggle-on"></i
-          ></span>
-          <!-- Logo -->
-          <span class="d-inline"><img src="" alt="logo" /></span>
-          <!-- Menu Button on Tablet or Mobile Size -->
-          <span class="d-md-none"><i class="fas fa-ellipsis-h"></i></span>
-        </section>
-      </section>
 
-      <!-- Main Section in header -->
-      <section class="main-section">
-        <section class="d-flex">
-            <section>
-              <!-- Search Box -->
-            <span class="mr-3">
-              <span class="search-area d-none">
-                <i class="fas fa-times pointer"></i>
-                <input type="text" class="search-input" />
-                <i class="fas fa-search"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/grid.css" />
+  <title>admin-panel</title>
+</head>
+<!-- Direction for persian  -->
+
+<body dir="rtl">
+  <!-- Header -->
+  <header class="header">
+    <section class="logo-section bg-gray">
+      <!-- Logo Section -->
+      <section class="d-flex justify-content-between flex-md-row-reverse px-2">
+        <!-- Toggle Button -->
+        <span class="d-inline d-md-none"><i class="fas fa-toggle-off"></i></span>
+        <span class="d-md-inline d-none"><i class="fas fa-toggle-on"></i></span>
+        <!-- Logo -->
+        <span class="d-inline"><img src alt="logo" /></span>
+        <!-- Menu Button on Tablet or Mobile Size -->
+        <span class="d-md-none"><i class="fas fa-ellipsis-h"></i></span>
+      </section>
+    </section>
+
+    <!-- Main Section in header -->
+    <section class="main-section">
+      <section class="d-flex justify-content-between">
+        <section>
+          <!-- Search Box -->
+          <span class="mr-3">
+            <span class="search-area d-none">
+              <i class="fas fa-times pointer"></i>
+              <input type="text" class="search-input" />
+              <i class="fas fa-search"></i>
+            </span>
+            <i class="fas fa-search p-1 d-none d-md-inline"></i>
+          </span>
+          <!-- FullScreen Button -->
+          <span class="pointer p-1 d-none d-md-inline">
+            <i class="fas fa-compress"></i>
+            <i class="fas fa-expand"></i>
+          </span>
+        </section>
+
+        <!-- profile section in header -->
+         <section>
+
+           <!-- Notification section -->
+            <span class="ml-2 ml-md-4 position-relative">
+
+              <span class="pointer">
+                <i class="far fa-bell"><sup class="badge badge-danger">2</sup></i>
               </span>
-              <i class="fas fa-search p-1 d-none d-md-inline"></i>
-            </span>
-            <!-- FullScreen Button -->
-            <span class="pointer p-1 d-none d-md-inline">
-                <i class="fas fa-compress"></i>
-                <i class="fas fa-expand"></i>
-            </span>
-          </section>
-        </section>
-      </section>
-    </header>
+              <section class="header-notification">
+                <section class="d-flex justify-content-between">
 
-    <!-- Script Files -->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="/assets/js/popper.min.js"></script>
-    <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
-    <script src="/assets/js/script.js"></script>
-  </body>
+                  <span class="px-2">
+                    نوتیفکیشن ها
+                  </span>
+                  <span class="px-2">
+                    <span class="badge badge-danger">
+                      جدید
+                    </span>
+                  </span>
+
+                </section> 
+                <!-- Notification Menu -->
+                <ul class="list-group rounded px-0">
+                  <li class="list-group-item list-group-item-action">
+                    <section class="media">
+                      <img class="notification-img" src="" alt="avatar">
+                      <section class="media-body pr-2">
+                        <h5 class="notification-user">امین عطائی</h5>
+                        <p class="notification-text">متن نوتیفیکشن </p>
+                        <p class="notification-time">30 دقیقه پیش</p>
+                      </section>
+                    </section>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <section class="media">
+                      <img class="notification-img" src="" alt="avatar">
+                      <section class="media-body pr-2">
+                        <h5 class="notification-user">امین عطائی</h5>
+                        <p class="notification-text">متن نوتیفیکشن </p>
+                        <p class="notification-time">30 دقیقه پیش</p>
+                      </section>
+                    </section>
+                  </li>
+                </ul>
+              </section>
+
+            </span>
+
+         </section>
+      </section>
+    </section>
+  </header>
+
+  <!-- Script Files -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+</body>
+
 </html>

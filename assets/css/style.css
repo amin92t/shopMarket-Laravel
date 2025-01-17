@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'IRANSans';
-    src: url('/assets/fonts/IRANSansX-Regular.woff') format('woff');
+    src: url('../fonts/IRANSansX-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,6 +13,6 @@
 }
 
 .bg-gray{
-    background-color: #ecebeb;
+    background-color: #d6d5d5;
     color: #000;
 }
