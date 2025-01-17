@@ -70,5 +70,34 @@ $(document).ready(function(){
         $(this).children(".sidebar-dropdown-toggle").children(".angle").addClass("fa-angle-down");
 
 
-   })
+   });
+
+
+   $("#full-screen").click(function(){
+    toggleFullScreen();
+   });
+
+
+   function toggleFullScreen(){
+
+        if(document.fullscreenElement && document.fullscreenElement !== null || !document.webkitIsFullScreen){
+            if(document.documentElement.requestFullscreen){
+                document.documentElement.requestFullscreen();
+            };
+            $("#screen-commpress").removeClass("d-none");
+        $("#screen-expand").addClass("d-none");
+        }else{
+            if(document.cancelFullScreen){
+                document.cancelFullScreen();
+            }else if(document.webkitCancelFullScreen){
+                document.webkitCancelFullScreen();
+            }
+            $("#screen-commpress").addClass("d-none");
+            $("#screen-expand").removeClass("d-none");
+        };
+
+        
+
+
+   };
 })
