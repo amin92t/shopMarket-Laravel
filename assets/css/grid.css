@@ -264,3 +264,55 @@
     content: ">>";
     margin: 0.6rem;
 }
+
+.main-body{
+    width: calc(100% - 16rem);
+    padding: 1.2rem;
+    min-height: calc(100% - 3rem);
+    background-color: #e0e0e0 ;
+}
+
+.info-box-body h5{
+    font-size: 0.9rem;
+    line-height: 1rem;
+}
+
+.info-box-body p{
+    font-size: 0.7rem;
+}
+
+.info-box-body i{
+    font-size: 2rem;
+}
+
+.info-box-footer{
+    font-size: 0.6rem;
+}
+
+.main-body-container{
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 768px){
+    .sidebar{
+        display: none;
+        max-width: 16rem;
+        z-index: 9;
+        height: calc(100% - 3rem);
+        top: 4rem;
+        right: 0;
+    }
+
+    .sidebar-container{
+        position: relative;
+        width: 16rem;
+        height: 100%;
+        top: 0;
+    }
+    .main-body{
+        width: 100%;
+    }
+}

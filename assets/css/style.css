@@ -16,3 +16,15 @@
     background-color: #d6d5d5;
     color: #000;
 }
+
+.bg-custom-yellow{
+    background: linear-gradient(to right, #feb798, #fe9365);
+}
+
+.bg-custom-green{
+    background: linear-gradient(to right, #f30dae, #fa8ad8);
+}
+
+.bg-custom-pink{
+    background: linear-gradient(to right, #109104, #7fdb76);
+}
