@@ -134,3 +134,133 @@
     width: 2rem;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 768px){
+    .header{
+        display: block;
+    }
+    .logo-section{
+        width: 100%;
+    }
+    .main-section{
+        display: none;
+        width: 100%;
+    }
+}
+
+
+.body-container{
+    display: flex;
+    z-index: 100000;
+    margin-top: 3rem;
+}
+
+.sidebar{
+    flex: 0 0 20rem;
+    background-color: #d6d5d5;
+    color: #757575;
+    padding-right: 1rem;
+}
+
+.sidebar-container{
+    height: calc(100vh - 3rem);
+    right: 0;
+    top: 3rem;
+    z-index: 1000000;
+}
+
+.sidebar-wrapper{
+    padding: 1rem 0;
+    overflow: auto;
+}
+
+.sidebar-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar-part-title{
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar-link{
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #1146da;
+    transition: all 0.3s ease-in;
+}
+
+.sidebar-link:hover{
+    text-decoration: none;
+    color: #da2811;
+}
+
+.sidebar-group-link{
+    font-size: 0.9rem;
+    padding: 0.4rem 0 ;
+    color: #757575 ;
+    padding: 0.4rem 2rem;
+}
+
+
+.sidebar-group-link-active{
+    border-right: #1146da  3px solid;
+}
+
+.sidebar-group-link>.sidebar-dropdown{
+    height: 0;
+    display: none;
+
+
+}
+
+.sidebar-group-link-action>.sidebar-dropdown{
+    height: auto!important;
+    display: block;
+
+}
+
+.sidebar-dropdown-toggle{
+    cursor: pointer;
+    padding: 0.2re 0.3rem;
+}
+
+
+.sidebar-dropdown-toggle:hover{
+    color: #da2811;
+}
+
+.sidebar-dropdown-toggle .angle{
+    float: left;
+    padding-left: 0.4rem 0;
+}
+
+.sidebar-dropdown a{
+    display: block;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    color: #757575;
+}
+
+.sidebar-dropdown a:hover{
+    color: #1146da;
+    background-color: #ececec;
+    border-radius: 1rem;
+}
+
+
+.sidebar-dropdown a::before{
+    content: ">>";
+    margin: 0.6rem;
+}
