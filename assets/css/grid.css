@@ -222,7 +222,7 @@
 
 }
 
-.sidebar-group-link-action>.sidebar-dropdown{
+.sidebar-group-link-active>.sidebar-dropdown{
     height: auto!important;
     display: block;
 
